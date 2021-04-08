@@ -17,6 +17,7 @@ void loop() {
   if (heading < 0)
     heading += 360;
   heading = 360 - heading;
+  Serial.println(heading);
   if (heading > 338 || heading < 22) {
     Serial.println("NORTH");
   }
